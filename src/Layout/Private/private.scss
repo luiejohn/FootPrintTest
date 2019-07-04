@@ -1,0 +1,15 @@
+//Layouts
+
+.admin-content {
+    display: flex;
+}
+
+
+.main-content {
+    background-color: var(--color-grey-light-1);
+    min-height: 80rem;
+    flex: 1;
+
+    padding: 3rem;
+}
+
