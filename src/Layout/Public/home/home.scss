@@ -3,8 +3,8 @@ $color-light: #7ed56f;
 $color-primary-dark: #28b485; 
 
 .home-main {
-    width: 80%;
-    margin: 0 auto;
+    // width: 75%;
+    // margin: 0 auto;
     // border: 1px solid #ccc;
     
     min-height: 50rem;
@@ -13,7 +13,7 @@ $color-primary-dark: #28b485;
         font-size: 4.5rem;
         padding: 2rem 0;
         text-align: center;
-        margin-top: 7.5rem;
+        margin-top: 5.5rem;
 
         background-image: linear-gradient(to right, $color-light, $color-primary-dark);
         // display: inline-block;
@@ -22,5 +22,117 @@ $color-primary-dark: #28b485;
         color: transparent;
     }
 
+    &__section-cont {
+        
+        width: 75%;
+        margin: 0 auto;
+        // min-height: 45rem;
+        padding: 10rem 0 18rem 0;
+
+        display: flex;
+    }
+
+    &__section1 {
+        width: 100%;
+        // background-color: yellow;
+
+        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        // clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+
+
+    }
+
+    &__item-text, &__item-images {
+        // border: 1px solid #ccc;
+        flex: 1;
+        padding: 2rem;
+
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+
+    &__item-text {
+
+        & > *:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__item-images {
+        position: relative;
+    }
+
+    &__photos {
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba(0,0,0, .4);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        // outline-offset: 2rem;
+
+        &:hover {
+            // outline: 1.5rem solid $color-primary;
+            transform: scale(1.03) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba(0,0,0, .5);
+            z-index: 20;
+        }
+    }
+
+    &__photos-01 {
+        left:0;
+        top:-2rem;
+    }
+
+    &__photos-02 {
+        right:0;
+        top:2rem;
+    }
+
+    &__photos-03 {
+        left:20%;
+        top: 10rem;
+    }
+
+}
+
+.heading-small {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #444;
+    // margin-bottom: 2rem;
+    // text-transform: uppercase;
+}
+
+.paragraph-text {
+    font-size: 1.5rem;
+    color: #444;
     
+}
+
+
+.section2 {
+    padding: 20rem 0;
+    background-color: $color-primary;
+    background-image:   linear-gradient(to right, rgba($color-primary, .6), rgba($color-primary-dark, 0.6)),
+                        url('../../../assets/img/sea.jpg');
+    background-size: cover;
+    transform: skewY(-3deg);
+
+    display: flex;
+
+    & > * {
+        transform: skewY(3deg);
+        
+    }
+
+    &__card {
+        flex:1;
+        height: 12rem;
+        background-color: #fff;
+        border: 1px solid #fff;
+        margin-right: 2rem;
+    }
+
 }
