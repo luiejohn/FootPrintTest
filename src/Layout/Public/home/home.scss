@@ -1,0 +1,26 @@
+$color-primary: #55c57a;
+$color-light: #7ed56f;
+$color-primary-dark: #28b485; 
+
+.home-main {
+    width: 80%;
+    margin: 0 auto;
+    // border: 1px solid #ccc;
+    
+    min-height: 50rem;
+
+    &__heading1 {
+        font-size: 4.5rem;
+        padding: 2rem 0;
+        text-align: center;
+        margin-top: 7.5rem;
+
+        background-image: linear-gradient(to right, $color-light, $color-primary-dark);
+        // display: inline-block;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        color: transparent;
+    }
+
+    
+}

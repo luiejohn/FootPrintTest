@@ -1,0 +1,84 @@
+$color-primary: #55c57a;
+$color-light: #7ed56f;
+$color-primary-dark: #28b485; 
+
+$color-primary1: #eb2f64;
+$color-primary-light1: #FF3366;
+$color-primary-dark1: #BA2650;
+
+.home-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    border-bottom: var(--line);
+    background-color: #ccc;
+    color:#fff;
+    font-weight: 300;
+
+    background-image: linear-gradient(to right bottom, rgba($color-primary, .6), rgba($color-primary-dark, .6)), url('../../../assets/img/sea.jpg');
+    background-size: cover;
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+
+    &__headline {
+        font-size: 10rem;
+    }
+
+    &__subheadline {
+        display: inline-block;
+        font-size: 5rem;
+        letter-spacing: .25rem;
+    }
+
+    &__search {
+        margin-top: 3rem;
+
+        position: relative;
+
+        & input {
+            padding: 1.5rem 2.5rem 1.5rem 6rem;
+            border-radius: 100px;
+            border: 1px solid transparent;
+            // text-align: center;
+            transition: all .3s;
+        }
+
+        & input:focus {
+            outline: none;
+            // border: 1px solid #ccc;
+            box-shadow: 0 .5rem 3rem rgba(0, 0, 0, 0.4);
+
+            // transform: translateY(-.5rem);
+        }
+
+    } 
+    
+    &__sub-icon {
+        height: 2.3rem;
+        width: 2.3rem;
+        position: absolute;
+        top:1.2rem;
+        left: 2.3rem;
+        fill: var(--color-grey-dark-1);
+    }
+}
+
+.btn-subscribe {
+    padding: 1.6rem 3rem;
+    border-radius: 100px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(to right, $color-primary1, $color-primary-dark1);
+    margin-left: 1.5rem;
+    transition: all .3s;
+    // text-transform: lowercase
+    cursor: pointer;
+
+    &:hover {
+        background-image: linear-gradient(to left, $color-primary1, $color-primary-dark1);
+        animation: pulsate 1s infinite;
+    }
+}
