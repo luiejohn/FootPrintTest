@@ -184,11 +184,6 @@ class Dashboard extends Component {
                     </div>
                 </div>
 
-                    <div className="container">
-
-                    </div>
-
-
             </Fragment>
         )
     }

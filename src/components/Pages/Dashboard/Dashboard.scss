@@ -247,33 +247,3 @@
         padding: 1rem 0 1rem 1rem;
     }
 }
-
-
-.container{
-    display: inline-block;
-    padding: 10px;
-    // border:1px solid #ccc;
-    border-radius: 2px;
-    margin-top: 15px;
-    position: relative;
-}
-
-.container::before{
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-bottom-color: #fff ;
-    border-top: 0px;
-    position: absolute;
-    top: -10px;
-}
-
-.container {
-  width: 400px;
-  height: 100px;
-  margin: 50px auto;
-  background: #fff;
-  
-}

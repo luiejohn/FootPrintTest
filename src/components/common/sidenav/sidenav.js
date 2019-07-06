@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 import './sidenav.scss';
 import svg from '../../../assets/Icon/sprite.svg';
 
-import PrivateLayout from '../../../Layout/Private/private';
+// import PrivateLayout from '../../../Layout/Private/private';
 
 class SideNav extends Component {
 
-    constructor() {
-        super();
-        // this.state = {
-        //     activeLink: 0
-        // }
-    }
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //         activeLink: 0
+    //     }
+    // }
 
 
     render () {

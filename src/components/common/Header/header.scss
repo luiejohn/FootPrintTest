@@ -76,9 +76,11 @@ $color-primary-dark1: #BA2650;
     transition: all .3s;
     // text-transform: lowercase
     cursor: pointer;
+    
+    animation: pulsate 1s infinite;
 
     &:hover {
         background-image: linear-gradient(to left, $color-primary1, $color-primary-dark1);
-        animation: pulsate 1s infinite;
+        
     }
 }

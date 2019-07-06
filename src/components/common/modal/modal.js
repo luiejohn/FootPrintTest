@@ -1,15 +1,19 @@
 import React from 'react';
 
 import './modal.scss';
-import SamplePic from '../../../assets/img/gallery-1.jpg';
+// import SamplePic from '../../../assets/img/gallery-1.jpg';
 
-const Modal = () => {
+const Modal = ( props )  => {
     return (
-        <div id="openModal" className="modalDialog">
-            <div>
-                <img src={SamplePic} className="view_image" alt=""/> <a href="#close" title="Close" className="close">X</a>
+        <div>
+            <div className={props.show ? "backdrop" : null}></div>
+            <div id="openModal" className={ props.show ? "modal modal-show" : "modal modal-hide"}>
+                {
+                    props.children
+                }
             </div>
         </div>
+
     )
 }
 

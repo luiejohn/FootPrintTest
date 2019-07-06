@@ -2,6 +2,22 @@ $color-primary: #55c57a;
 $color-light: #7ed56f;
 $color-primary-dark: #28b485; 
 
+.home-nav-colored {
+    display: flex;
+    // padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    // border-bottom: 1px solid #f2f2f2;
+    background-color: #fff;
+    color:#999;
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    width: 100%;
+
+}
+
 .home-nav{
     display: flex;
     // padding: 2rem;
@@ -38,13 +54,19 @@ $color-primary-dark: #28b485;
             // background-color: $color-primary-dark;
         }
 
-        &__link:link,
-        &__link:visited {
+        &__link {
             position: relative;
             text-decoration: none;
             color: currentColor;
+            background-color: transparent;
+            border:none;
+            cursor: pointer;
             
             margin-right: .8rem;
+        }
+
+        &__link:focus {
+            outline:none;
         }
 
         &__link::after {

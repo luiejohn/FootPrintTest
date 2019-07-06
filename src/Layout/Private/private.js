@@ -20,6 +20,12 @@ class Private extends Component {
         activeContent: 0
     }
 
+
+    componentDidMount() {
+        //scroll to top of the page
+        window.scrollTo(0, 0);
+    }
+
     handleChanges = (name, value) => {
         this.setState({[name]:value});
     }
