@@ -89,6 +89,10 @@ $color-primary-dark: #28b485;
     padding: 18rem 0 18rem 0;
 
     display: flex;
+
+    @media only screen and (max-width: 950px){
+        padding: 18rem 0 13rem 0;
+    }
 }
 
 
@@ -151,8 +155,154 @@ $color-primary-dark: #28b485;
         }
 
     }
+}
+
+.section-cont3 {
+    width: 100%;
+    margin-top: -10rem;
+    background-image: linear-gradient(to right bottom, $color-light, $color-primary-dark);
+}
+
+.section-book {
+    padding: 25rem 0 15rem 0;
+    // background-image: linear-gradient(to right bottom, $color-light, $color-primary-dark);
+    width: 75%;
+    margin: 0 auto;
 
 }
+
+.book {
+    background-image: linear-gradient(105deg, 
+                                      rgba(255,255,255, 0.9) 0%,
+                                      rgba(255,255,255, 0.9) 50%,
+                                      transparent 50%),
+                                      url('../../../assets/img/nat-3.jpg');
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+
+    height: 50rem;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}
+
+
+.form {
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rbga(255,255,255, .5);
+        border:none;
+        border-bottom: 3px solid transparent;
+        width: 100%;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(0,0,0, .1);
+            border-bottom: 3px solid $color-primary;
+    
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-primary-dark; 
+        }
+
+        &::-webkit-input-placeholder {
+            color: #999;
+        }
+
+    }
+
+    // style the label when the place holder is shown/not shown
+    // use sibling selector
+    // ~ general sibling selector
+    // + next sibling selector
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left:2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .2s;
+    }
+
+    &__radio-group {
+        width:49%;
+        display: inline-block;
+    }
+
+    &__radio-input {
+        display: none;
+    }
+
+    &__radio-label {
+        font-size: 1.6rem;
+        cursor: pointer;
+        position: relative;
+        padding-left: 4.5rem;
+    }
+
+    //styled radio button
+    &__radio-button {
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid $color-primary;
+        border-radius:50%;
+        display: inline-block;
+        position: absolute;
+        left:0;
+        top: -.6rem;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 50%;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-primary;
+            opacity: 0;
+            transition: opacity .2s;
+
+        }
+
+    }
+
+    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+        opacity: 1;
+    }
+}
+
+.submit-form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 
 .text-center {
     text-align: center;
@@ -160,6 +310,14 @@ $color-primary-dark: #28b485;
 
 .mt-2 {
     margin-top: 2rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mt-6 {
+    margin-top: 6rem;
 }
 
 .mb-2 {
