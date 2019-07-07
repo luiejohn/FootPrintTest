@@ -12,8 +12,6 @@ import jevin from '../../../assets/img/jevin.jpg';
 
 const Navigation = ( { pageChange } ) => {
 
-        console.log(pageChange);
-
     return (
         <div className="top-nav">
             <div className="logo">

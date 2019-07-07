@@ -40,9 +40,7 @@ class HomeNav extends Component {
                     <ul className="home-nav__navigation">
                         <button  href="#" className="home-nav__link">
                             <li className="home-nav__item">
-                                
                                     Tours
-                                
                             </li>
                         </button >
                         <button  href="#" className="home-nav__link">

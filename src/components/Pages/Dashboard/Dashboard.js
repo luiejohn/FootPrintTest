@@ -140,7 +140,7 @@ class Dashboard extends Component {
                                     <div>
                                         Flag
                                     </div>
-                                    <div>United Kingdom</div>
+                                    <div>Japan</div>
                                     <div>2.9723</div>
                                     <div>58.23%</div>
                                 </div>

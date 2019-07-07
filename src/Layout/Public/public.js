@@ -21,10 +21,8 @@ class Public extends Component {
     }
 
     render() {
-        // console.log(this.state.loggingIn);
         return (
             <div className="pc-1">
-                {/* <TopNavigation/> */}
                 <HomeNav handleChange={this.handleChange}/>
                 <Header />
                 <main>

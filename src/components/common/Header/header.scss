@@ -76,6 +76,7 @@ $color-primary-dark1: #BA2650;
     transition: all .3s;
     // text-transform: lowercase
     cursor: pointer;
+    backface-visibility: hidden;
     
     animation: pulsate 1s infinite;
 
