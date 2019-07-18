@@ -3,7 +3,10 @@ import React, { Component, Fragment } from 'react';
 import './Dashboard.scss';
 
 import svg from '../../../assets/Icon/sprite.svg';
-
+import List from './../../common/dashboard-list/listItem';
+import HotelList from './../../common/dashboard-list/hotelstatlist';
+import FlightList from './../../common/dashboard-list/flightslist';
+// import Private from './../../../Layout/Private/private';
 
 class Dashboard extends Component {
 
@@ -164,8 +167,12 @@ class Dashboard extends Component {
                 <div className="dash-bot">
                     <div className="dash-bot__item">
                         <div className="dash-bot__item-header dash-bot__item-header-1">
-                            <div className="dash-bot__text-1">Active Users</div>
-                            <div className="dash-bot__text-2">32142</div>
+                            <div className="dash-bot__text-1">Active Administrators</div>
+                            <div className="dash-bot__text-2">2342</div>
+                        </div>
+
+                        <div className="dash-bot__stat">
+                            <List />
                         </div>
                     </div>
 
@@ -174,16 +181,25 @@ class Dashboard extends Component {
                             <div className="dash-bot__text-1">Hotels Search</div>
                             <div className="dash-bot__text-2">52395</div>
                         </div>
+
+                        <div className="dash-bot__stat">
+                            <HotelList />
+                        </div>
+
                     </div>
 
                     <div className="dash-bot__item">
                         <div className="dash-bot__item-header dash-bot__item-header-3">
                             <div className="dash-bot__text-1">Flights Search</div>
-                            <div className="dash-bot__text-2">765</div>
+                            <div className="dash-bot__text-2">29652</div>
                         </div>
+
+                        <div className="dash-bot__stat">
+                            <FlightList />
+                        </div>
+
                     </div>
                 </div>
-
             </Fragment>
         )
     }

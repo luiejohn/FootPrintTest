@@ -1,0 +1,17 @@
+.dash-bot {
+    &__list-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+        border-top: 1px solid #ccc;
+        text-align: left;
+        align-content: flex-start;
+    }
+
+    &__hotel-ave {
+        justify-self: flex-end;
+        align-self: center;
+        // flex: 1;
+        // flex-basis: 30%;
+    }
+}

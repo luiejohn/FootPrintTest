@@ -1,3 +1,10 @@
+$bp-largest: 75em;  //1200px;
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em;    //900px;
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+$bp-sm-mb: 26.85em; //430px
+
 .sidebar {
     background-color: var(--color-grey-dark-1);
 
@@ -15,16 +22,29 @@
     list-style: none;
     margin-top: 3.5rem;
     
+    @media only screen and (max-width: $bp-medium){
+        display:flex;
+        margin: 0;
+    }
+
 
     &__item {
         position: relative;
 
         &:not(:last-child) {
             margin-bottom: .5rem;
+
+            @media only screen and (max-width: $bp-medium){
+                margin:0;
+            }
         }
 
         &--active {
             background-color: var(--color-primary);
+        }
+
+        @media only screen and (max-width: $bp-medium){
+            flex: 1;
         }
 
     }
@@ -69,15 +89,15 @@
         display: flex;
         align-items: center;
 
-        // @media only screen and (max-width: $bp-medium){
-        //     justify-content: center;
-        //     padding: 2rem;
-        // }
+        @media only screen and (max-width: $bp-medium){
+            justify-content: center;
+            padding: 2rem;
+        }
 
-        // @media only screen and (max-width: $bp-small){
-        //     flex-direction: column;
-        //     padding: 1.5rem .5rem;
-        // }
+        @media only screen and (max-width: $bp-small){
+            flex-direction: column;
+            padding: 2rem .5rem;
+        }
 
     }
 
@@ -91,12 +111,12 @@
         margin-right: 2rem;
         fill: currentColor;
 
-        // @media only screen and (max-width: $bp-small){
-        //     margin-right: 0;
-        //     margin-bottom: .7rem;
-        //     width: 1.5rem;
-        //     height: 1.5rem;
-        // }
+        @media only screen and (max-width: $bp-small){
+            margin-right: 0;
+            margin-bottom: .7rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 }
 
@@ -106,9 +126,9 @@
     text-align: center;
     padding: 2.5rem;
 
-    // @media only screen and (max-width: $bp-medium){
-    //     display:none;
-    // }
+    @media only screen and (max-width: $bp-medium){
+        display:none;
+    }
 }
 
 

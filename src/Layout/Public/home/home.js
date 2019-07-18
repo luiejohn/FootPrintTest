@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 import './home.scss';
@@ -7,43 +7,14 @@ import gallery01 from '../../../assets/img/nat-1.jpg';
 import gallery02 from '../../../assets/img/nat-2.jpg';
 import gallery03 from '../../../assets/img/nat-3.jpg';
 import svg from '../../../assets/Icon/sprite.svg';
-import Modal from '../../../components/common/modal/modal';
+import Header from './../../../components/common/Header/header';
 
 
-const Home = ({isLogin, handleChange}) => {
+const Home = () => {
 
     return (
         <Fragment>
-            <Modal show={isLogin}>
-                <div className="modal-content">
-                    <button onClick={ () => handleChange('loggingIn', false)} className="btn-close">&times;</button>
-                    <span className="login-with">Sign in with</span>
-                    <div className="social-cont">
-                        <button className="btn-media">Google</button>
-                        <button className="btn-media">Facebook</button>
-                    </div>
-
-                    <div className="login-cont">
-                        <span className="login-with" style={{paddingTop:0}}>or sign in with credentials</span>
-
-                        <input type="text" placeholder="Email" className="login__input" />
-                        <input type="Password" placeholder="Password" className="login__input"/>
-                        <div className="remember-me">
-                            <input type="checkbox" id="check1"/> <label htmlFor="check1">Remember Me</label>
-                        </div>
-
-                        <div className="login-btn-cont">
-                            <Link to="/admin" >
-                                <button>LOGIN</button>
-                            </Link>
-                        </div>
-                    </div>
-
-                </div>
-            </Modal>
-
-
-
+            <Header />
             <div className="home-main">
 
                     <div className="home-main__heading1">
@@ -81,7 +52,7 @@ const Home = ({isLogin, handleChange}) => {
                 </section>
 
                 <section className="section2">
-                    <div className="section-cont">
+                    <div className="section-cont2">
                         <div className="section2__card">
                             <svg className="section2__card-icon">
                                 <use xlinkHref={`${svg}#icon-globe`} />
@@ -187,7 +158,7 @@ const Home = ({isLogin, handleChange}) => {
                                     </div>
 
                                     <div className="submit-form-group mt-4">
-                                            <button className="btn btn-subscribe">Next Step &rarr;</button>
+                                            <button className="btn-subscribe">Next Step &rarr;</button>
                                     </div>
 
                                 </form>

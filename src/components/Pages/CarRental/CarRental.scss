@@ -1,0 +1,14 @@
+.page-not-available{
+    font-size: 4rem;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60rem;
+
+    & svg {
+        fill: #999;
+    }
+
+}

@@ -10,9 +10,10 @@ import Modal from '../../components/common/modal/modal';
 import Dashboard from './../../components/Pages/Dashboard/Dashboard';
 import Content from '../../components/Pages/content-admin/content';
 import Flight from '../../components/Pages/Flight/Flight';
-import Hotels from '../../components/Pages/Hotels/Hotels';
+import Messages from '../../components/Pages/Messages/Messages';
 import Tours from '../../components/Pages/Tours/Tours';
 import CarRental from '../../components/Pages/CarRental/CarRental';
+import Error404 from './../../components/common/404/404';
 
 class Private extends Component {
 
@@ -24,6 +25,8 @@ class Private extends Component {
     componentDidMount() {
         //scroll to top of the page
         window.scrollTo(0, 0);
+
+        console.log(this.props);
     }
 
     handleChanges = (name, value) => {
@@ -38,18 +41,17 @@ class Private extends Component {
                 <TopNavigation content={ activeContent } pageChange={this.handleChanges}/>
     
                 <div className="admin-content">
-                    <SideNav content={ activeContent } pageChange={this.handleChanges} />
+                    <SideNav route={{...this.props}} content={ activeContent } pageChange={this.handleChanges} />
                     <main className="main-content">
                         
                             <Switch>
                                 <Route exact path="/admin" component={ Dashboard }/>
                                 <Route exact path="/admin/flight" component={ Flight } />
-                                <Route exact path="/admin/hotels" component={ Hotels } />
+                                <Route exact path="/admin/messages" component={ Messages } />
                                 <Route exact path="/admin/car-rental" component={ CarRental } />
                                 <Route exact path="/admin/content" component={ Content } />
                                 <Route exact path="/admin/tours" component={ Tours } />
-                                <Route path="/admin/*" redirect="/admin" />
-
+                                <Route component={Error404} />
                             </Switch>
                         
                     </main>

@@ -1,12 +1,48 @@
+$bp-largest: 75em;  //1200px;
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em;    //900px;
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+$bp-sm-mb: 26.85em; //430px
+
 .top-nav {
     font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--line);
+    color: #999;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
+
+    &__logo {
+        align-self: stretch;
+        padding: 0 2rem;
+
+        display: flex;
+        // margin-top: -1.5rem;
+        
+        &:first-child {
+            display: flex;
+            align-items: center;
+        }
+
+        & span {
+            font-size: 1.9rem;
+            font-weight: 400;
+            margin-left: .6rem;
+            display: flex;
+            align-items: center;
+
+            @media only screen and (max-width: 900px){
+                font-size: 2.5rem;
+            }
+        }
+
+    }
 }
 
 
@@ -69,10 +105,25 @@
         transition: all .2s;
         margin-right: -3.25rem;
 
+        @media only screen and (max-width: $bp-smallest){
+            margin-right: -4rem;
+            width: 80%;
+        }
+
+        @media only screen and (max-width: $bp-medium){
+            visibility: hidden;
+            display: none;
+        }
+
         &:focus {
             outline:none;
             width: 100%;
             background-color: var( --color-grey-light-3);
+
+            @media only screen and (max-width: $bp-smallest){
+                margin-right: -4rem;
+                width: 90%;
+            }
 
         }
 
@@ -92,6 +143,11 @@
         display: flex;
         align-items: center;
 
+        @media only screen and (max-width: $bp-medium){
+            visibility: hidden;
+            display: none;
+        }
+        
         &:focus {
             outline: none;
         }
@@ -117,6 +173,11 @@
     // justify-content: center;
     align-items: center;
     position: relative;
+
+    @media only screen and (max-width: $bp-medium){
+        visibility: hidden;
+        display: none;
+    }
 
     & > * {
         padding: 0 2rem;
@@ -153,8 +214,6 @@
         height: 2.25rem;
         width: 2.25rem;
         fill: var(--color-grey-dark-3);
-
-        
     }
 
     &__notification {
@@ -286,20 +345,6 @@
 }
 
 
-// .arrow {
-//     position: absolute;
-//     // content: "";
-//     display:block;
-//     width:0;
-//     height:0;
-//     left:50%;
-//     margin-left: 10px;
-//     margin-top: 20px;
-//     border: 10px solid transparent;
-//     border-bottom: 10px solid yellow;
-
-// }
-
 .user-dropdown {
     font-size: 1.6rem;
     display: flex;
@@ -329,6 +374,7 @@
         left:58%;
         top: -10px;
         z-index: 9999;
+        backface-visibility: hidden;
     }
 
     &__header {
@@ -413,3 +459,93 @@
     }
 }
 
+
+.home-nav {
+    &__mobile-nav-admin-btn {
+        width: 5.5rem;
+        height: 5.5rem;
+        color: #fff;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+
+        @media only screen and (max-width: 900px){
+            visibility: visible;
+            top: .8rem;
+            right: 1.5rem;
+            width: 5rem;
+            height: 5rem;
+        }
+
+    }
+
+    &__mobile-nav-admin-icon {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    &__mobile-nav-admin-icon-white {
+        fill: #fff;
+    }
+
+    &__mobile-nav-admin-cont {
+        position: absolute;
+        height: 0;
+        width: 100%;
+        background-color: #333;
+        top:100%;
+        left:0;
+        z-index: 500;
+
+        visibility: hidden;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .3s;
+
+    }
+
+    &__mobile-nav-admin-cont-show {
+        position: absolute;
+        height: 60rem;
+        width: 100%;
+        background-color: #333;
+        top:100%;
+        left:0;
+        z-index: 1500;
+
+        visibility: visible;
+        overflow: hidden;
+        opacity: 1;
+        transition: all .3s;
+
+    }
+
+
+    &__mobile-nav-admin-list {
+        padding: 3rem;
+        list-style: none;
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+            padding: 3rem 3.5rem;
+            color: #fff;
+        }
+
+        & > *:not(:last-child) {
+            margin-bottom: 2.7rem;
+            // border-bottom: 1px solid #ccc;
+        }
+    }
+
+    &__mobile-nav-admin-item {
+        border: none;
+        background-color: var(--color-primary);
+    }
+}

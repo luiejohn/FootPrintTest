@@ -1,0 +1,20 @@
+.dash-bot {
+    &__list-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+        border-top: 1px solid #ccc;
+        text-align: left;
+        align-content: flex-start;
+
+        // @media only screen and (max-width: 600px){
+        //     font-size: 1.4rem;
+        // }
+
+    }
+
+    &__user-name {
+        justify-self: center;
+    }
+    
+}

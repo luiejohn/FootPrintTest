@@ -1,6 +1,8 @@
 import React from 'react';
 
 import './footer.scss';
+import svg from '../../../assets/Icon/sprite.svg';
+
 
 const Footer = () => {
 
@@ -8,24 +10,26 @@ const Footer = () => {
         <div className="footer">
             <div className="footer__center-cont">
                 <div className="footer__logo">
-                    LOGO
+                    <svg className="footer__icon">
+                        <use xlinkHref={`${svg}#icon-compass`} />
+                    </svg>
                 </div>
 
                 <div className="footer__nav-cont">
                     <ul className="footer__nav">
-                        <a href="#" alt="" >
+                        <a href="home.com" alt="" >
                             <li>Company</li>
                         </a>
-                        <a href="#" alt="" >
+                        <a href="home.com" alt="" >
                             <li>Contact Us</li>
                         </a>
-                        <a href="#" alt="" >
+                        <a href="home.com" alt="" >
                             <li>Careers</li>
                         </a>
-                        <a href="#" alt="" >
+                        <a href="home.com" alt="" >
                             <li>Privacy Policy</li>
                         </a>
-                        <a href="#" alt="" >
+                        <a href="home.com" alt="" >
                             <li>Terms</li>
                         </a>
                     </ul>

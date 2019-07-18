@@ -1,22 +1,23 @@
 import React, { Component, Fragment } from 'react';
 
+import './Messages.scss'
 import svg from '../../../assets/Icon/sprite.svg';
 
-class Tours extends Component {
+class Hotels extends Component {
 
-    render() {
+    render(){
 
         return(
             <Fragment>
-                 <div className="page-not-available">
+                <div className="page-not-available">
                     <svg>
                         <use xlinkHref={`${svg}#icon-paper-plane`}/>
                     </svg>
-                    Tours not available
+                    Messages not available
                 </div>
             </Fragment>
         )
     }
 }
 
-export default Tours;
+export default Hotels;

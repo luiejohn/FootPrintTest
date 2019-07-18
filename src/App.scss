@@ -1,10 +1,18 @@
 // $color-primary: #eb2f64;
 // $color-primary-light: #FF3366;
 
+// $color-primary: #55c57a;
+// $color-light: #7ed56f;
+// $color-primary-dark: #28b485; 
+
 :root {
-    --color-primary: #eb2f64;
-    --color-primary-light: #FF3366;
+    --color-primary: #55c57a;
+    --color-primary-light: #7ed56f;
     --color-primary-dark: #BA2650;
+
+    // --color-primary: #eb2f64;
+    // --color-primary-light: #FF3366;
+    // --color-primary-dark: #28b485;
 
     --color-grey-light-1: #faf9f9;
     --color-grey-light-2: #f4f2f2;
@@ -47,6 +55,10 @@ html {
     @media only screen and (max-width: 1000px){
         font-size: 45%;
     }
+
+    // @media only screen and (max-width: 400px){
+    //     font-size: 65%;
+    // }
 }
 
 ::-webkit-scrollbar {
@@ -55,9 +67,9 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border:1.8px solid #f2f2f2;
+    background-color: #55c57a;
+    border:2px solid #f2f2f2;
     border-radius: 100px;
-    width: 10px;
-    margin: 3px;
+    width: 9px;
+    // margin: 5px;
 }

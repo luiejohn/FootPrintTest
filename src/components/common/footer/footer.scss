@@ -7,9 +7,15 @@
         font-size: 2.5rem;
     }
 
+    &__icon {
+        fill: var(--color-primary);
+        height: 14rem;
+        width: 14rem;
+    }
+
     &__center-cont {
         width: 75%;
-        padding: 10rem 0;
+        padding: 6rem 0;
         margin: 0 auto;
         // border: 1px solid #ccc;
         color: #fff;
@@ -17,6 +23,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media only screen and (max-width: 900px){
+            width: 85%;
+            padding: 8rem 0;
+        }
+
+        @media only screen and (max-width: 700px){
+            width: 90%;
+            padding: 5rem 0;
+        }
+
     }
 
     &__nav-cont {
@@ -24,6 +41,9 @@
         width: 100%;
         padding: 3rem;
 
+        @media only screen and (max-width: 600px){
+            flex-direction: column;
+        }
     }
 
     &__nav {
@@ -37,8 +57,16 @@
         justify-content: center;
         margin-right: 10rem;
 
+        @media only screen and (max-width: 600px){
+            margin-right: 0;
+        }
+
         & a:not(:last-child) {
             margin-right: 3rem;
+
+            @media only screen and (max-width: 900px){
+                margin-right: 2rem;
+            }
         }
 
         & a:link, a:visited {
