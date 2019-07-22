@@ -15,6 +15,7 @@ class ToursList extends Component {
         currentPage: 1,
         filter:'All',
         adventure: 'All',
+        isWishList: 'false',
         filteredTours: [],
         isDropDownOpen: false,
         isPageNumDropDown: false
@@ -35,7 +36,6 @@ class ToursList extends Component {
     //         this.setState({isPageNumDropDown: false});
     //     }
     // }
-
 
     filterChangeHandler = (name, value) => {
 
@@ -156,9 +156,12 @@ class ToursList extends Component {
                                         <use xlinkHref={`${svg}#icon-chevron-thin-right`}></use>
                                     </svg>
 
-                                   {
-                                       this.state.itemPerPage + ` per page`
-                                   }
+                                   <div className="tours-filter__display-text">
+                                        {
+                                            this.state.itemPerPage + ` per page`
+                                        }
+                                   </div>
+
                                 </div>
 
                                 <div className={ isPageNumDropDown ? "tours-filter__ad-select tours-filter__ad-select-show2" : "tours-filter__ad-select" }>

@@ -146,6 +146,7 @@ export const Tours = [
         type: "sea",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'August 2, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -156,6 +157,7 @@ export const Tours = [
         type: "forest",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'August 3, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -166,6 +168,7 @@ export const Tours = [
         type: "forest",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'August 7, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -176,6 +179,7 @@ export const Tours = [
         type: "forest",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'August 10, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -186,6 +190,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'August 2, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -196,6 +201,7 @@ export const Tours = [
         type: "forest",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'August 20, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -206,6 +212,7 @@ export const Tours = [
         type: "sea",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'August 17, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -217,16 +224,18 @@ export const Tours = [
         type: "sea",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'August 21, 2019',
         seatsLeft: 21,
         price: 150
     },
     {
         tourID: 9,
-        title: "Ferral Bunny Island",
+        title: "Bunny Island",
         image: image4,
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'September 3, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -237,6 +246,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'September 6, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -248,6 +258,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'September 1, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -258,6 +269,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'September 13, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -268,6 +280,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'September 13, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -278,6 +291,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'September 18, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -288,6 +302,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'September 23, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -299,6 +314,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'September 29, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -309,6 +325,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'September 30, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -319,6 +336,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'October 3, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -329,6 +347,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'October 15, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -339,6 +358,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'October 14, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -349,6 +369,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'October 19, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -359,6 +380,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'October 21, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -369,6 +391,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'October 25, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -379,6 +402,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'November 3, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -389,6 +413,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'November 5, 2019',
         seatsLeft: 21,
         price: 150
     },
@@ -399,6 +424,7 @@ export const Tours = [
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
+        date: 'November 11, 2019',
         seatsLeft: 21,
         price: 150
     },

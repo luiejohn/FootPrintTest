@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import './nav-home.scss';
 import svg from '../../../assets/Icon/sprite.svg';
 import Modal from './../modal/modal';
+import BackDrop from './../backdrop/backdrop';
+
 
 class HomeNav extends Component {
 
@@ -32,7 +34,7 @@ class HomeNav extends Component {
     componentWillUnmount() {
         // console.log('Unmount!');
         window.removeEventListener('scroll', this.scrollDetect, false);
-        window.removeEventListener('keydown', this.pressEscape, false);
+        window.removeEventListener('keydown', this.closeModal, false);
 
     }
 
@@ -81,7 +83,7 @@ class HomeNav extends Component {
         const { isTop, mobileNav, loggingIn, homePage } = this.state;
         return (
             <Fragment>
-                <div className={ mobileNav ? "backdrop" : null} onClick={() => this.handleChange('mobileNav', false)}></div>
+                 <BackDrop className={ mobileNav ? "backdrop" : null} onClick={() => this.handleChange('mobileNav', false)} />
                 <div className={homePage && isTop && !mobileNav ? "home-nav" : "home-nav-colored"} id="home-nav">
                     <div className="home-nav__logo">
                         <div>
@@ -111,14 +113,14 @@ class HomeNav extends Component {
                                 <span>Register</span>
                             </li>
                         </Link >
-                        <Link to="/"  onClick={() => this.handleChange('loggingIn', true)} className={homePage && isTop ? "home-nav__link" : "home-nav__link-colored"} >
+                        <button onClick={() => this.handleChange('loggingIn', true)} className={homePage && isTop ? "home-nav__link" : "home-nav__link-colored"} >
                             <li className="home-nav__item">
                                 <svg className={homePage && isTop ? "home-nav__nav-icon" : "home-nav__nav-icon-colored"}>
                                     <use xlinkHref={`${svg}#icon-users`}></use>
                                 </svg>
-                                <span>Login</span> 
+                                <span style={{fontSize:'1.3rem'}}>Login</span> 
                             </li>
-                        </Link>
+                        </button>
 
                         <Link to="/" className={homePage && isTop ? "home-nav__link" : "home-nav__link-colored"} onClick={() => this.handleChange('homePage', true)}>
                                 <li className="home-nav__item">
@@ -154,12 +156,12 @@ class HomeNav extends Component {
                                 </svg>
                                 <span>Register</span>
                             </Link>
-                            <Link to="/" className="home-nav__mobile-nav-item" onClick={() => this.updateNavLog('login')}>
+                            <button className="home-nav__mobile-nav-item" onClick={() => this.updateNavLog('login')}>
                                 <svg className="home-nav__nav-icon">
                                     <use xlinkHref={`${svg}#icon-users`}></use>
                                 </svg>
                                 <span>Login</span>
-                            </Link>
+                            </button>
                             <Link to="/" className="home-nav__mobile-nav-item" onClick={() => this.updateNavLog('home')}>
                                 <svg className="home-nav__nav-icon">
                                     <use xlinkHref={`${svg}#icon-home`}></use>
@@ -173,6 +175,7 @@ class HomeNav extends Component {
                 </div>
 
                     <Modal show={loggingIn} handleChange={this.handleChange}>
+
                     <div className="modal-content">
                         <button onClick={ () => this.handleChange('loggingIn', false)} className="btn-close">&times;</button>
                         
