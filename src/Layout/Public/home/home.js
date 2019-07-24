@@ -43,9 +43,9 @@ const Home = () => {
                             </div>
 
                             <div className="home-main__item-images">
-                                <img src={gallery01} alt="" className="home-main__photos home-main__photos-01"/>
-                                <img src={gallery02} alt="" className="home-main__photos home-main__photos-02"/>
-                                <img src={gallery03} alt="" className="home-main__photos home-main__photos-03"/>
+                                <img src="https://i.ibb.co/8DTV2FZ/nat-1.jpg" alt="" className="home-main__photos home-main__photos-01"/>
+                                <img src="https://i.ibb.co/xY48RJ0/nat-3.jpg" alt="" className="home-main__photos home-main__photos-02"/>
+                                <img src="https://i.ibb.co/yRNzjYH/nat-2.jpg" alt="" className="home-main__photos home-main__photos-03"/>
                             </div>
                     </div>
 

@@ -1,7 +1,22 @@
-import image1 from '../src/assets/img/enchant.jpg';
-import image2 from '../src/assets/img/gallery-3.jpg';
-import image3 from '../src/assets/img/nat-1.jpg';
-import image4 from '../src/assets/img/gallery-2.jpg';
+// import image1 from '../src/assets/img/enchant.jpg';
+// import image2 from '../src/assets/img/gallery-3.jpg';
+// import image3 from '../src/assets/img/nat-1.jpg';
+// import image4 from '../src/assets/img/gallery-2.jpg';
+
+
+// Forest 
+// https://i.ibb.co/Rc3H451/enchant.jpg
+// https://i.ibb.co/dfPKrWV/gallery-3.jpg
+// https://i.ibb.co/8DTV2FZ/nat-1.jpg
+
+// Sea
+// https://i.ibb.co/hm6vcRK/gallery-2.jpg
+// https://i.ibb.co/yRNzjYH/nat-2.jpg
+
+
+// Island
+// https://i.ibb.co/hm6vcRK/gallery-2.jpg
+
 
 export const userdata = [
     {
@@ -142,7 +157,7 @@ export const Tours = [
     {
         tourID: 1,
         title: "Dahican Beach Coast",
-        image: image1,
+        image: 'https://i.ibb.co/Rc3H451/enchant.jpg',
         type: "sea",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -153,7 +168,7 @@ export const Tours = [
     {
         tourID: 2,
         title: "Enchanted River",
-        image: image2,
+        image: 'https://i.ibb.co/dfPKrWV/gallery-3.jpg',
         type: "forest",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -164,7 +179,7 @@ export const Tours = [
     {
         tourID: 3,
         title: "Enchanted River",
-        image: image3,
+        image: 'https://i.ibb.co/8DTV2FZ/nat-1.jpg',
         type: "forest",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -175,7 +190,7 @@ export const Tours = [
     {
         tourID: 4,
         title: "Mount Britannia",
-        image: image4,
+        image: 'https://i.ibb.co/dfPKrWV/gallery-3.jpg',
         type: "forest",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -186,7 +201,7 @@ export const Tours = [
     {
         tourID: 5,
         title: "Garden Islands",
-        image: image2,
+        image: 'https://i.ibb.co/hm6vcRK/gallery-2.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -197,7 +212,7 @@ export const Tours = [
     {
         tourID: 6,
         title: "Mount Apo",
-        image: image3,
+        image: 'https://i.ibb.co/8DTV2FZ/nat-1.jpg',
         type: "forest",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -208,7 +223,7 @@ export const Tours = [
     {
         tourID: 7,
         title: "Great Barrier Reef",
-        image: image4,
+        image: 'https://i.ibb.co/yRNzjYH/nat-2.jpg',
         type: "sea",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -220,7 +235,7 @@ export const Tours = [
     {
         tourID: 8,
         title: "Palawan Ocean Sanctuary",
-        image: image1,
+        image: 'https://i.ibb.co/yRNzjYH/nat-2.jpg',
         type: "sea",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -231,7 +246,7 @@ export const Tours = [
     {
         tourID: 9,
         title: "Bunny Island",
-        image: image4,
+        image: 'https://i.ibb.co/hm6vcRK/gallery-2.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -242,7 +257,7 @@ export const Tours = [
     {
         tourID: 10,
         title: "Samal Island",
-        image: image3,
+        image: 'https://i.ibb.co/hm6vcRK/gallery-2.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -254,7 +269,7 @@ export const Tours = [
     {
         tourID: 11,
         title: "Neko Island",
-        image: image4,
+        image: 'https://i.ibb.co/hm6vcRK/gallery-2.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -265,7 +280,7 @@ export const Tours = [
     {
         tourID: 12,
         title: "Palawan Island",
-        image: image2,
+        image: 'https://i.ibb.co/Rc3H451/enchant.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -276,7 +291,7 @@ export const Tours = [
     {
         tourID: 13,
         title: "Negros Island",
-        image: image2,
+        image: 'https://i.ibb.co/8DTV2FZ/nat-1.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -287,7 +302,7 @@ export const Tours = [
     {
         tourID: 14,
         title: "Ferral Bunny Island",
-        image: image3,
+        image: 'https://i.ibb.co/Rc3H451/enchant.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -298,7 +313,7 @@ export const Tours = [
     {
         tourID: 15,
         title: "Neko Island",
-        image: image1,
+        image: 'https://i.ibb.co/8DTV2FZ/nat-1.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -310,7 +325,7 @@ export const Tours = [
     {
         tourID: 16,
         title: "Palawan Island",
-        image: image1,
+        image: 'https://i.ibb.co/Rc3H451/enchant.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -321,7 +336,7 @@ export const Tours = [
     {
         tourID: 17,
         title: "Palawan Island",
-        image: image2,
+        image: 'https://i.ibb.co/Rc3H451/enchant.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -332,7 +347,7 @@ export const Tours = [
     {
         tourID: 18,
         title: "Island Garden",
-        image: image3,
+        image: 'https://i.ibb.co/8DTV2FZ/nat-1.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -343,7 +358,7 @@ export const Tours = [
     {
         tourID: 19,
         title: "Samal Island",
-        image: image3,
+        image: 'https://i.ibb.co/Rc3H451/enchant.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -354,7 +369,7 @@ export const Tours = [
     {
         tourID: 20,
         title: "Neko Island",
-        image: image3,
+        image: 'https://i.ibb.co/hm6vcRK/gallery-2.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -365,7 +380,7 @@ export const Tours = [
     {
         tourID: 21,
         title: "Spring Island",
-        image: image1,
+        image: 'https://i.ibb.co/Rc3H451/enchant.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -376,7 +391,7 @@ export const Tours = [
     {
         tourID: 22,
         title: "Britania Island",
-        image: image1,
+        image: 'https://i.ibb.co/8DTV2FZ/nat-1.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -387,7 +402,7 @@ export const Tours = [
     {
         tourID: 23,
         title: "Neko Island",
-        image: image2,
+        image: 'https://i.ibb.co/hm6vcRK/gallery-2.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -398,7 +413,7 @@ export const Tours = [
     {
         tourID: 24,
         title: "Samal Island",
-        image: image3,
+        image: 'https://i.ibb.co/dfPKrWV/gallery-3.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -409,7 +424,7 @@ export const Tours = [
     {
         tourID: 25,
         title: "Spring Island",
-        image: image3,
+        image: 'https://i.ibb.co/Rc3H451/enchant.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,
@@ -420,7 +435,7 @@ export const Tours = [
     {
         tourID: 26,
         title: "Neko Island",
-        image: image2,
+        image: 'https://i.ibb.co/dfPKrWV/gallery-3.jpg',
         type: "island",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quod vel ut perferendis dolore accusamus ducimus provident natus assumenda officiis, perspiciatis excepturi obcaecati aperiam iste quibusdam molestiae? Iure, adipisci quaerat.",
         seatsMax: 25,

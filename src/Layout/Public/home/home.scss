@@ -202,7 +202,7 @@ $color-primary-dark: #28b485;
     width: 100%;
     // padding: 20rem 0;
     background-image:   linear-gradient(to right, rgba($color-primary, .6), rgba($color-primary-dark, 0.6)),
-                        url('../../../assets/img/sea.jpg');
+                        url('https://i.ibb.co/fHwFRH6/sea.jpg');
     background-size: cover;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 13%, 100% 0, 100% 89%, 0 100%);
@@ -305,7 +305,7 @@ $color-primary-dark: #28b485;
                                       rgba($color-light, 0.9) 0%,
                                       rgba($color-primary-dark, 0.9) 50%,
                                       transparent 50%),
-                                      url('../../../assets/img/nat-3.jpg');
+                                      url('https://i.ibb.co/xY48RJ0/nat-3.jpg');
     background-size: cover;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
@@ -318,7 +318,7 @@ $color-primary-dark: #28b485;
                 rgba($color-light, 0.9) 0%,
                 rgba($color-primary-dark, 0.9) 60%,
                 transparent 100%),
-                url('../../../assets/img/nat-3.jpg');
+                url('https://i.ibb.co/xY48RJ0/nat-3.jpg');
 
     }
 
