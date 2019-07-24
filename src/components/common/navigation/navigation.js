@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 import './navigation.scss';
 
 import svg from '../../../assets/Icon/sprite.svg';
-import user from '../../../assets/img/lui.jpg';
-import kent from '../../../assets/img/kent.jpg';
-import kirb from '../../../assets/img/kirb.jpg';
-import jevin from '../../../assets/img/jevin.jpg';
+// import user from '../../../assets/img/lui.jpg';
+// import kent from '../../../assets/img/kent.jpg';
+// import kirb from '../../../assets/img/kirb.jpg';
+// import jevin from '../../../assets/img/jevin.jpg';
 
 
 class Navigation extends Component {
@@ -86,7 +86,7 @@ class Navigation extends Component {
                                                 <li className="notif-dropdown__list-item">
                                                         <a href="home.com" className="notif-dropdown__link">
                                                                 <div className="notif-dropdown__photo-cont">
-                                                                        <img src={kent} alt="Friend 1" className="notif-dropdown__photo"/>
+                                                                        <img src='https://i.ibb.co/kQ81SLc/kent.jpg' alt="Friend 1" className="notif-dropdown__photo"/>
                                                                 </div>
                                                                 <span className="notif-dropdown__msg">Lorem ipsum dolor, sit amet.</span>
                                                         </a>
@@ -94,7 +94,7 @@ class Navigation extends Component {
                                                 <li className="notif-dropdown__list-item">
                                                         <a href="home.com" className="notif-dropdown__link">
                                                                 <div className="notif-dropdown__photo-cont">
-                                                                        <img src={jevin} alt="Friend 1" className="notif-dropdown__photo"/>
+                                                                        <img src='https://i.ibb.co/6N82SXD/kirb.jpg' alt="Friend 1" className="notif-dropdown__photo"/>
                                                                 </div>
                                                                 <span className="notif-dropdown__msg">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
                                                         </a>
@@ -102,7 +102,7 @@ class Navigation extends Component {
                                                 <li className="notif-dropdown__list-item">
                                                         <a href="home.com" className="notif-dropdown__link">
                                                                 <div className="notif-dropdown__photo-cont">
-                                                                        <img src={kirb} alt="Friend 1" className="notif-dropdown__photo"/>
+                                                                        <img src='https://i.ibb.co/dtknDdB/jevin.jpg' alt="Friend 1" className="notif-dropdown__photo"/>
                                                                 </div>
                                                                 <span className="notif-dropdown__msg">Sit amet consectetur adipisicing elit.</span>
                                                         </a>
@@ -110,7 +110,7 @@ class Navigation extends Component {
                                                 <li className="notif-dropdown__list-item">
                                                         <a href="home.com" className="notif-dropdown__link">
                                                                 <div className="notif-dropdown__photo-cont">
-                                                                        <img src={kent} alt="Friend 1" className="notif-dropdown__photo"/>
+                                                                        <img src='https://i.ibb.co/kQ81SLc/kent.jpg' alt="Friend 1" className="notif-dropdown__photo"/>
                                                                 </div>
                                                                 <span className="notif-dropdown__msg">Lorem met consectetur adipisicing elit.</span>
                                                         </a>
@@ -125,7 +125,7 @@ class Navigation extends Component {
                                 </div>
                 
                                 <div className="user-nav__user">
-                                    <img src={user} alt="user" className="user-nav__user-photo" />
+                                    <img src='https://i.ibb.co/4KkmnJW/lui.jpg' alt="user" className="user-nav__user-photo" />
                                     <span className="user-nav__user-name">
                                         Luie
                                     </span>

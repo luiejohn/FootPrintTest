@@ -3,9 +3,9 @@ import React, { Fragment } from 'react';
 
 
 import './home.scss';
-import gallery01 from '../../../assets/img/nat-1.jpg';
-import gallery02 from '../../../assets/img/nat-2.jpg';
-import gallery03 from '../../../assets/img/nat-3.jpg';
+// import gallery01 from '../../../assets/img/nat-1.jpg';
+// import gallery02 from '../../../assets/img/nat-2.jpg';
+// import gallery03 from '../../../assets/img/nat-3.jpg';
 import svg from '../../../assets/Icon/sprite.svg';
 import Header from './../../../components/common/Header/header';
 
