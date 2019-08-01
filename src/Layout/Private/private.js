@@ -49,7 +49,7 @@ class Private extends Component {
                                 <Route exact path="/admin/flight" component={ Flight } />
                                 <Route exact path="/admin/messages" component={ Messages } />
                                 <Route exact path="/admin/car-rental" component={ CarRental } />
-                                <Route exact path="/admin/content" component={ Content } />
+                                {/* <Route exact path="/admin/content" component={ Content } /> */}
                                 <Route exact path="/admin/tours" component={ Tours } />
                                 <Route component={Error404} />
                             </Switch>
