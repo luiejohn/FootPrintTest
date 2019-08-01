@@ -69,7 +69,7 @@ class SideNav extends Component {
                 </ul>
         
                 <div className="legal">
-                    &copy; 2019 by Luie. All rights reserved.
+                    &copy; 2019 Built by Luie. All rights reserved.
                 </div>
             </div>
             )

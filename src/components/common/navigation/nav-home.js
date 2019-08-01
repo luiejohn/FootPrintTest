@@ -27,30 +27,19 @@ class HomeNav extends Component {
         else {
             this.setState({homePage: false})
         }
-
-
     }
 
     componentWillUnmount() {
         // console.log('Unmount!');
         window.removeEventListener('scroll', this.scrollDetect, false);
         window.removeEventListener('keydown', this.closeModal, false);
-
     }
-
 
     handleChange = (name, value) => {
         this.setState({[name]: value});
-        
     }
 
-    // isHomePage = () => {
-    //     const {homePage} = this.state;
-    //     this.setState({homePage: !homePage});
-    // }
-
     updateNavLog = (name) => {
-        // this.handleChange('mobileNav', false);
         this.handleChange('mobileNav', !this.state.mobileNav);
         if(name === 'login'){
             this.handleChange('loggingIn', true);
@@ -63,7 +52,6 @@ class HomeNav extends Component {
         else {
             this.setState({homePage: false});
         }
-
     }
 
     scrollDetect = () => {
