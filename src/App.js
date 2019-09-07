@@ -1,10 +1,6 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './App.scss';
 
-
-// const PublicLayout = React.lazy(()=> import('./Layout/Public/public'));
-// const PrivateLayout = React.lazy(()=> import('./Layout/Private/private'));
 
 import PublicLayout from './Layout/Public/public';
 import PrivateLayout from './Layout/Private/private';
